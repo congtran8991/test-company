@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Router from './component/app_router';
+import ThemeContextProvider from './contexts/userContext';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <UserProvider > */}
+    <ThemeContextProvider>
+    <Router />
+    </ThemeContextProvider>
+    {/* </UserProvider> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
